@@ -1,0 +1,9 @@
+.examples {
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .examples {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  min-height: 600px;
+  text-align: center;
+
+  .left,
+  .right {
+    flex: 1;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .textContainer {
+      position: absolute;
+      bottom: 60px;
+      width: 60%;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .left {
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+
+    .textContainer {
+      color: hsl(167, 40%, 24%);
+
+      h3 {
+        font-family: "Fraunces", serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .right {
+    background-image: url("/images/desktop/image-photography.jpg");
+
+    .textContainer {
+      color: hsl(198, 62%, 26%);
+
+      h3 {
+        font-family: "Fraunces", serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    flex-direction: column;
+
+    .left,
+    .right {
+      min-height: 600px;
+    }
+  }
+}

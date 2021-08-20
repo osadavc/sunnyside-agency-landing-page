@@ -1,0 +1,33 @@
+.footer {
+  background-color: #90d4c5;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    margin-top: 50px;
+  }
+
+  .footerNav {
+    color: hsl(167, 40%, 24%);
+    margin-top: 20px;
+
+    span {
+      padding: 20px;
+      cursor: pointer;
+      transition: color 0.25s ease-in-out;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .socialMedia {
+    margin-top: 40px;
+    img {
+      padding: 10px;
+    }
+  }
+}
