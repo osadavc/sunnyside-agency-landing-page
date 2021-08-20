@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 35px;
+  position: relative;
 
   .menu {
     display: flex;
@@ -31,8 +32,45 @@
     }
   }
 
-  .mobileMenu {
+  .mobileToggle {
     display: none;
+    cursor: pointer;
+  }
+}
+
+.mobileMenu {
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  top: 100px;
+  left: 50%;
+  margin-left: -39%;
+  padding: 50px 0;
+  color: hsl(232, 10%, 55%);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  & > * {
+    cursor: pointer;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+
+  .mobileContact {
+    background-color: hsl(51, 100%, 49%);
+    padding: 20px 0;
+    width: 40%;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 }
 
@@ -41,7 +79,13 @@
     display: none !important;
   }
 
-  .mobileMenu {
+  .mobileToggle {
     display: flex !important;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .mobileMenu {
+    display: none !important;
   }
 }
